@@ -9,15 +9,21 @@ package game.entity;
  *
  * @author Matt
  */
-public abstract class Charector extends Entity
+public class Charector extends Entity
 {
     private String name;
-
+    
 
     
     
-    abstract public String getName();
-    abstract public void setName(String newName);
+    public String getName()
+    {
+        return name;
+    }
+    public void setName(String newName)
+    {
+        this.name = newName;
+    }
     
     
 

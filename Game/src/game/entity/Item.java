@@ -9,21 +9,15 @@ package game.entity;
  *
  * @author Matt
  */
-public class Entity
+public class Item extends Entity
 {
-
-    private int current_x = 0;
-    private int current_y = 0;
-    
-    
-    
-    
-    public void setX(int newX)
+    private int value = 0;
+    Item(int newValue)
     {
-        this.current_x = newX;
+        this.value = newValue;
     }
-    public void setY(int newY)
+    Item()
     {
-        this.current_y = newY;
+         
     }
 }

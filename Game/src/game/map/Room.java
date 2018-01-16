@@ -5,11 +5,25 @@
  */
 package game.map;
 
+import game.entity.Entity;
+import java.util.ArrayList;
+
 /**
  *
  * @author Matt
  */
 public class Room
 {
+    private ArrayList<Entity> roomEntites = new ArrayList();
     
+    
+    
+    public Entity getEntity(int index)
+    {
+        return roomEntites.get(index);
+    }
+    public void addEntity(Entity newEntity)
+    {
+        this.roomEntites.add(newEntity);
+    }
 }
